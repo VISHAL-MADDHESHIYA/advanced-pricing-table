@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Modern responsive pricing table with monthly and yearly plans."
+    >
+
+    <title>Elevate — Pricing Plans</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-shell">
+
+        <!-- ================= HEADER ================= -->
+        <header class="topbar">
+
+            <a href="#" class="brand" aria-label="Elevate Home">
+
+                <span class="brand-mark">E</span>
+
+                <span>Elevate</span>
+
+            </a>
+
+            <div class="top-actions">
+
+                <!-- Theme Button -->
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch theme"
+                    title="Switch theme"
+                >
+                    <span id="themeIcon">☾</span>
+                </button>
+
+                <a href="#plans" class="login-link">
+                    Sign in
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+        <main>
+
+            <!-- ================= HERO ================= -->
+            <section
+                class="hero"
+                aria-labelledby="page-title"
+            >
+
+                <span class="eyebrow">
+                    Simple pricing · powerful features
+                </span>
+
+                <h1 id="page-title">
+                    Plans that scale with
+                    <span>your ambition.</span>
+                </h1>
+
+                <p>
+                    Choose the plan that fits your workflow.
+                    Upgrade, downgrade, or cancel whenever you want.
+                </p>
+
+
+                <!-- Billing Toggle -->
+                <div
+                    class="billing-row"
+                    aria-label="Billing frequency"
+                >
+
+                    <span>Monthly</span>
+
+                    <button
+                        class="switch"
+                        id="billingToggle"
+                        type="button"
+                        role="switch"
+                        aria-checked="false"
+                        aria-label="Toggle yearly billing"
+                    >
+                        <span></span>
+                    </button>
+
+                    <span>
+                        Yearly
+                        <b>Save 20%</b>
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PRICING PLANS ================= -->
+            <section
+                class="plans"
+                id="plans"
+                aria-label="Pricing plans"
+            >
+
+                <!-- ========== STARTER ========== -->
+                <article
+                    class="plan-card"
+                    data-plan="Starter"
+                >
+
+                    <div class="plan-head">
+
+                        <div>
+
+                            <span class="plan-icon">
+                                ✦
+                            </span>
+
+                            <h2>Starter</h2>
+
+                            <p>
+                                For individuals getting started.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="price">
+
+                        <span class="currency">
+                            ₹
+                        </span>
+
+                        <span
+                            class="amount"
+                            data-monthly="499"
+                            data-yearly="399"
+                        >
+                            499
+                        </span>
+
+                        <span class="period">
+                            /mo
+                        </span>
+
+                    </div>
+
+
+                    <p class="annual-note">
+                        Billed monthly
+                    </p>
+
+
+                    <!-- CTA -->
+                    <button
+                        class="cta secondary"
+                        data-action="Starter"
+                        type="button"
+                    >
+                        Start free trial
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="feature-title">
+                        Includes:
+                    </div>
+
+
+                    <ul class="features">
+
+                        <li>
+                            <span>✓</span>
+                            3 projects
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            5 GB storage
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Basic analytics
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Email support
+                        </li>
+
+                        <li class="muted">
+                            <span>×</span>
+                            Advanced reports
+                        </li>
+
+                        <li class="muted">
+                            <span>×</span>
+                            Team collaboration
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <!-- ========== PRO ========== -->
+                <article
+                    class="plan-card featured"
+                    data-plan="Pro"
+                >
+
+                    <!-- Popular Badge -->
+                    <div class="popular-badge">
+                        MOST POPULAR
+                    </div>
+
+
+                    <div class="plan-head">
+
+                        <div>
+
+                            <span class="plan-icon">
+                                ◆
+                            </span>
+
+                            <h2>Pro</h2>
+
+                            <p>
+                                For professionals who want more.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="price">
+
+                        <span class="currency">
+                            ₹
+                        </span>
+
+                        <span
+                            class="amount"
+                            data-monthly="999"
+                            data-yearly="799"
+                        >
+                            999
+                        </span>
+
+                        <span class="period">
+                            /mo
+                        </span>
+
+                    </div>
+
+
+                    <p class="annual-note">
+                        Billed monthly
+                    </p>
+
+
+                    <!-- CTA -->
+                    <button
+                        class="cta primary"
+                        data-action="Pro"
+                        type="button"
+                    >
+                        Start free trial
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="feature-title">
+                        Everything in Starter, plus:
+                    </div>
+
+
+                    <ul class="features">
+
+                        <li>
+                            <span>✓</span>
+                            Unlimited projects
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            100 GB storage
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Advanced analytics
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Priority support
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Advanced reports
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Team collaboration
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <!-- ========== BUSINESS ========== -->
+                <article
+                    class="plan-card"
+                    data-plan="Business"
+                >
+
+                    <div class="plan-head">
+
+                        <div>
+
+                            <span class="plan-icon">
+                                ◈
+                            </span>
+
+                            <h2>Business</h2>
+
+                            <p>
+                                For growing teams and companies.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="price">
+
+                        <span class="currency">
+                            ₹
+                        </span>
+
+                        <span
+                            class="amount"
+                            data-monthly="1999"
+                            data-yearly="1599"
+                        >
+                            1999
+                        </span>
+
+                        <span class="period">
+                            /mo
+                        </span>
+
+                    </div>
+
+
+                    <p class="annual-note">
+                        Billed monthly
+                    </p>
+
+
+                    <!-- CTA -->
+                    <button
+                        class="cta secondary"
+                        data-action="Business"
+                        type="button"
+                    >
+                        Start free trial
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="feature-title">
+                        Everything in Pro, plus:
+                    </div>
+
+
+                    <ul class="features">
+
+                        <li>
+                            <span>✓</span>
+                            Unlimited team members
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            1 TB storage
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Custom dashboards
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Dedicated support
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            SSO &amp; security
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            API access
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================= COMPARISON ================= -->
+            <section
+                class="comparison"
+                aria-labelledby="comparison-title"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            Compare everything
+                        </span>
+
+                        <h2 id="comparison-title">
+                            Find the right fit
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        class="compare-btn"
+                        id="compareToggle"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        Show comparison
+                        <span>↓</span>
+                    </button>
+
+                </div>
+
+
+                <!-- Comparison Table -->
+                <div
+                    class="table-wrap"
+                    id="comparisonTable"
+                    hidden
+                >
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Feature</th>
+                                <th>Starter</th>
+                                <th>Pro</th>
+                                <th>Business</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>Projects</td>
+                                <td>3</td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>
+                            </tr>
+
+                            <tr>
+                                <td>Storage</td>
+                                <td>5 GB</td>
+                                <td>100 GB</td>
+                                <td>1 TB</td>
+                            </tr>
+
+                            <tr>
+                                <td>Analytics</td>
+                                <td>Basic</td>
+                                <td>Advanced</td>
+                                <td>Custom</td>
+                            </tr>
+
+                            <tr>
+                                <td>Team members</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>Unlimited</td>
+                            </tr>
+
+                            <tr>
+                                <td>Priority support</td>
+                                <td>—</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+
+                            <tr>
+                                <td>API access</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>✓</td>
+                            </tr>
+
+                            <tr>
+                                <td>SSO &amp; security</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>✓</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= TRUST ================= -->
+            <section
+                class="trust"
+                aria-label="Trust statement"
+            >
+
+                <span>✓</span>
+
+                <p>
+                    No credit card required ·
+                    14-day free trial ·
+                    Cancel anytime
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+        <footer>
+
+            <p>
+                © 2026 Elevate.
+                Built with semantic HTML,
+                modern CSS &amp; vanilla JavaScript.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
