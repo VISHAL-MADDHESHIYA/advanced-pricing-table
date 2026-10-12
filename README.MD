@@ -9,10 +9,9 @@ This project was created as part of **Day 12 — Web Development Internship Trac
 ## 🚀 Live Demo
 
 🔗 **GitHub Pages:**
-
-https://YOUR-USERNAME.github.io/advanced-pricing-table/
-
-> Replace `YOUR-USERNAME` with your GitHub username.
+https://github.com/VISHAL-MADDHESHIYA/advanced-pricing-table/
+🔗 **Live Demo:**
+https://vishal-maddheshiya.github.io/advanced-pricing-table/
 
 ---
 
